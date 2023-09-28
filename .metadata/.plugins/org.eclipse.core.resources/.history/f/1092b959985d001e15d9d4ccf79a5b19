@@ -1,0 +1,49 @@
+package models;
+
+public class Usuario {
+	
+	//Declaracion de propiedades
+	private int Id;
+	private String Nombre;
+	private String Apellido;
+	private String Ciudad;
+	
+	//Declaracion del metodo  constructor con propiedades
+	public Usuario(String nombre, String apellido, String ciudad) {
+		Nombre = nombre;
+		Apellido = apellido;
+		Ciudad = ciudad;
+	}
+	
+	//Declaracion de los accesos a las propiedades
+	public int getId() {
+		return Id;
+	}
+	public void setId(int id) {
+		Id = id;
+	}
+	public String getNombre() {
+		return Nombre;
+	}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+	public String getApellido() {
+		return Apellido;
+	}
+	public void setApellido(String apellido) {
+		Apellido = apellido;
+	}
+	public String getCiudad() {
+		return Ciudad;
+	}
+	public void setCiudad(String ciudad) {
+		Ciudad = ciudad;
+	}
+	//Declaracion de metodo para mostrar los datos
+	@Override
+	public String toString() {
+		return "Usuario [Id=" + Id + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Ciudad=" + Ciudad + "]";
+	}
+	
+}

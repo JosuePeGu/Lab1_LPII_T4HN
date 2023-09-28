@@ -1,0 +1,8 @@
+package models;
+
+public class Usuario {
+	private int Id;
+	private tring nombre;
+	private string Apellido;
+	private string Ciudad;
+}

@@ -1,0 +1,28 @@
+package Views;
+
+import controllers.EmpleadoController;
+import models.Empleado;
+
+public class EmpleadoView {
+
+	public static void main(String[] args) {
+		//String empleado = new EmpleadoController().createEmpleado("", "", 0, "", 0);
+		//System.out.println(empleado);
+		
+		Empleado empleado = new EmpleadoController().readerEmpleado(1);
+		
+		if (empleado != null) {
+			System.out.println("Empleado encontrado:");
+			System.out.println("ID: " + empleado.getId());
+			System.out.println("Nombre: " + empleado.getNombre());
+			System.out.println("Apellido: " + empleado.getApellido());
+			System.out.println("Edad: " + empleado.getEdad());
+			System.out.println("Sexo: " + empleado.getSexo());
+			System.out.println("Salario: " + empleado.getSalario());
+		}
+		else {
+			System.out.println("Empleado no encontrado");
+		}
+	}
+
+}

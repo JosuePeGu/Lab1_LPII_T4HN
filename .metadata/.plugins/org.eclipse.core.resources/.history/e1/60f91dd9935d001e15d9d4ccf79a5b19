@@ -1,0 +1,39 @@
+package models;
+
+public class Usuario {
+	
+	private int Id;
+	private String Nombre;
+	private String Apellido;
+	private String Ciudad;
+	
+	public int getId() {
+		return Id;
+	}
+	public void setId(int id) {
+		Id = id;
+	}
+	public String getNombre() {
+		return Nombre;
+	}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+	public String getApellido() {
+		return Apellido;
+	}
+	public void setApellido(String apellido) {
+		Apellido = apellido;
+	}
+	public String getCiudad() {
+		return Ciudad;
+	}
+	public void setCiudad(String ciudad) {
+		Ciudad = ciudad;
+	}
+	@Override
+	public String toString() {
+		return "Usuario [Id=" + Id + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", Ciudad=" + Ciudad + "]";
+	}
+	
+}
